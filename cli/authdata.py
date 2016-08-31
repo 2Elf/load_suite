@@ -11,11 +11,11 @@ def get_random_word(wordLen, seq=constants.CHOICE_SEQUENCE):
 
 def get_name():
     firsn_len = random.randint(5, 8)
-    first_name = get_random_word(firsn_len,
-                                 constants.LETTERS).capitalize()
+    first_name = get_random_word(
+        firsn_len,constants.LETTERS).capitalize()
     last_len = random.randint(5, 8)
-    last_name = get_random_word(last_len,
-                                constants.LETTERS).capitalize()
+    last_name = get_random_word(
+        last_len,constants.LETTERS).capitalize()
     return '{first_name} {last_name}'\
            .format(last_name=last_name,
                     first_name=first_name
